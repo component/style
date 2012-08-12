@@ -40,6 +40,12 @@ style('.progress .percent', 'font-size');
   Canvas renders using CSS, where style decisions belong. For details
   view this [blog post](http://tjholowaychuk.com/post/6339741902/styling-canvas-drawings-with-css).
 
+## Performance
+
+  Generating and computing styles for ~2000 unique selectors in chrome
+  takes ~300ms, so be careful if you plan on using this for many _unique_ selectors. Values
+  are otherwise cached in an object and can easily operate above 300,000 ops/s.
+
 ## License
 
   MIT
