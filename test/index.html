@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>Mocha</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="mocha.css" />
+    <style>
+      body {
+        font-size: 18px;
+      }
+      .progress {
+        background: #fff;
+      }
+      .progress .percent {
+        color: #ddd;
+      }
+      .progress .ring {
+        background: #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="mocha"></div>
+    <script src="mocha.js"></script>
+    <script>mocha.setup('bdd')</script>
+    <script src="../build/build.js"></script>
+    <script src="unit.js"></script>
+    <script>
+      mocha.run();
+    </script>
+  </body>
+</html>
