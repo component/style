@@ -1,5 +1,5 @@
 {
-  "name": "style",
+  "name": "style-component",
   "description": "Style canvas renders using CSS",
   "version": "0.0.1",
   "keywords": ["css", "canvas", "utility"],
