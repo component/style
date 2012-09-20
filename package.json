@@ -1,0 +1,11 @@
+{
+  "name": "style",
+  "description": "Style canvas renders using CSS",
+  "version": "0.0.1",
+  "keywords": ["css", "canvas", "utility"],
+  "component": {
+    "scripts": {
+      "style/index.js": "index.js"
+    }
+  }
+}
