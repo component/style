@@ -15,4 +15,8 @@ describe('style(selector, prop)', function(){
     assert('rgb(221, 221, 221)' == style('.progress .percent', 'color'));
     assert('18px' == style('.progress .percent', 'font-size'));
   })
+  it('should also support svg-style properties', function(){
+    assert('rgb(221, 221, 221)' == style('.progress .percent', 'stroke'));
+    assert('miter' == style('.progress .percent', 'stroke-linejoin'));
+  })
 })

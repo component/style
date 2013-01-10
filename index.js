@@ -16,6 +16,7 @@ module.exports = style;
 
 function style(selector, prop) {
   var cache = style.cache = style.cache || {}
+    , prop = camelCase(prop)
     , cid = selector + ':' + prop;
 
   if (cache[cid]) return cache[cid];
@@ -43,4 +44,8 @@ function style(selector, prop) {
   var ret = getComputedStyle(child)[prop];
   document.body.removeChild(root);
   return cache[cid] = ret;
+}
+
+function camelCase(str) {
+  return str.toLowerCase().replace(/(\-[a-z])/g, function(m){ return m.toUpperCase().replace('-', ''); });
 }
