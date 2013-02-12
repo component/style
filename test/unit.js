@@ -23,4 +23,9 @@ describe('style(selector, prop)', function(){
   it('should also support svg-style properties', function(){
     eql('miter', style('.progress .percent', 'stroke-linejoin'));
   })
+  it('should support querying multiple props at once', function(){
+    var props = style('.progress .percent', ['font-size', 'color']);
+    eql('18px', props['font-size']);
+    eql('rgb(221, 221, 221)', props['color']);
+  })
 })
