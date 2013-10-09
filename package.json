@@ -2,10 +2,18 @@
   "name": "style-component",
   "description": "Style canvas renders using CSS",
   "version": "0.0.1",
-  "keywords": ["css", "canvas", "utility"],
+  "keywords": [
+    "css",
+    "canvas",
+    "utility"
+  ],
   "component": {
     "scripts": {
       "style/index.js": "index.js"
     }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/component/style.git"
   }
 }
